@@ -8,7 +8,7 @@ const MainNavbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     const handleScrolling = () => {
-        if (window.scrollY > 180) {
+        if (window.scrollY > 80) {
             setIsScrolled(true);
         } else {
             setIsScrolled(false);
@@ -27,7 +27,7 @@ const MainNavbar = () => {
         <nav className={`navbar navbar-expand-lg py-3 fixed-top top-0 left-0 transitions-3 ${isScrolled ? "bg-white shadow-sm" : ""}`}>
             <div className="container">
                 <a href="#home" className={`${isScrolled ? "navbar-logo-invert" : ""}`}>
-                    <img src={Logo} alt="IT Host" />
+                    <img src={Logo} alt="IT Host" draggable={false} />
                 </a>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
