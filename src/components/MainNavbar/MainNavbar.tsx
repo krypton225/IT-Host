@@ -4,7 +4,7 @@ import { Logo } from "../../data/photos";
 
 const MainNavbar = () => {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary py-3">
             <div className="container">
                 <a href="#home">
                     <img src={Logo} alt="IT Host" />
