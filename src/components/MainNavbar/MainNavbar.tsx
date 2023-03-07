@@ -1,33 +1,36 @@
-import { Container, Navbar, Nav } from "react-bootstrap";
-
 import navbarDataItemsLinks from "./navbar-data";
 
 import { Logo } from "../../data/photos";
 
 const MainNavbar = () => {
     return (
-        <Navbar bg="light" expand="lg" className="py-3" fixed="top">
-            <Container>
-                <Navbar.Brand href="#home">
+        <nav className="navbar navbar-expand-lg bg-body-tertiary sticky-top py-3">
+            <div className="container">
+                <a href="#home">
                     <img src={Logo} alt="IT Host" />
-                </Navbar.Brand>
+                </a>
 
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav ms-auto">
                         {
                             navbarDataItemsLinks.map(({ id, text, url, hasButtonShape }) => (
-                                <Nav.Link href={url} key={id}
-                                    className={`${hasButtonShape ? "custom-link" : ""} mx-2 fw-semibold text-capitalize`}>
-                                    {text}
-                                </Nav.Link>
+                                <li key={id} className="nav-item">
+                                    <a href={url}
+                                        className={`${hasButtonShape ? "custom-link" : ""} mx-2 fw-semibold text-capitalize`}>
+                                        {text}
+                                    </a>
+                                </li>
                             ))
                         }
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     );
 };
 
