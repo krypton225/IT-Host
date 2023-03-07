@@ -7,7 +7,7 @@ const navbarDataItemsLinks: Array<INavbarLinks> = [
     { text: "services", url: "/", hasButtonShape: false },
     { text: "news", url: "/", hasButtonShape: false },
     { text: "contact", url: "/", hasButtonShape: false },
-    { text: "login/register", url: "/", hasButtonShape: true },
+    { text: "login / register", url: "/", hasButtonShape: true },
 ];
 
 (() => GenerateId(navbarDataItemsLinks))();
