@@ -1,3 +1,5 @@
+@import "./montserrat-font.css";
+
 :root {
   --white-color: #fff;
   --black-color: #000;
@@ -13,4 +15,8 @@
   --text-darker-1: #1c1c1c;
   --text-darker-2: #212529;
   --text-blue: #007bff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
