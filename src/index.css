@@ -16,13 +16,114 @@
   --text-darker-1: #1c1c1c;
   --text-darker-2: #212529;
   --text-blue: #007bff;
+
+  --main-duration-time: 0.3s;
+  --duration-time-4: 0.4s;
 }
 
 body {
-  /* height: 20000px; */
+  height: 20000px;
   font-family: 'Montserrat', sans-serif;
+}
+
+section {
+  padding-block: 10rem;
+}
+
+.transitions-3 {
+  transition: all var(--main-duration-time) ease-in-out;
+}
+
+.text-black {
+  color: var(--black-color);
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    padding-block: 1.3rem;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    background-color: var(--white-color) !important;
+    color: var(--black-color) !important;
+    box-shadow: 0 10px 10px #24242417;
+  }
 }
 
 .navbar-toggler:focus {
   box-shadow: none;
+}
+
+.navbar-toggler {
+  background-color: var(--white-color) !important;
+}
+
+.navbar-logo-invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+.nav-item-link:hover {
+  color: var(--pink-color) !important;
+  transition: color var(--duration-time-4) ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .nav-item {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-block: 0.6rem;
+  }
+
+  .nav-item-link {
+    color: var(--black-color) !important;
+  }
+}
+
+.w-70 {
+  width: 70%;
+}
+
+@media (min-width: 300px) and (max-width: 991px) {
+  .landing-text {
+    text-align: center;
+  }
+
+  .landing-text p:first-child {
+    font-size: calc(1.3rem + 3.9vw);
+  }
+}
+
+@media (max-width: 991px) {
+  .landing-img {
+    display: none;
+  }
+}
+
+.animated {
+  animation-name: landing-img-animations;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-fill-mode: backwards;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes landing-img-animations {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  20% {
+    transform: translate(10px, 10px);
+  }
+
+  40% {
+    transform: translate(-20px, -20px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
