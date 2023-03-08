@@ -109,6 +109,10 @@ section {
   background-color: var(--pink-color);
 }
 
+.website-name:focus {
+  outline: none !important;
+}
+
 .animated {
   animation-name: landing-img-animations;
   animation-duration: 3s;
