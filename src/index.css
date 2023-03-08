@@ -32,8 +32,16 @@ section {
   padding-block: 10rem;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .transitions-3 {
   transition: all var(--main-duration-time) ease-in-out;
+}
+
+.border-pink {
+  border-color: var(--pink-color);
 }
 
 .p-half {
@@ -155,6 +163,11 @@ section {
   background-color: var(--bg-white-secondary);
   transform: rotate(45deg);
   z-index: -1;
+}
+
+.price-card__body ul li {
+  margin-block: 1.7rem;
+  text-transform: capitalize;
 }
 
 .animated {
