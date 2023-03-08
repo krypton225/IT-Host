@@ -7,7 +7,7 @@ const SkillsAndTestimonials = () => {
         <section>
             <div className="container">
                 <div className="row g-5">
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <div className="skills">
                             {
                                 skillsDataItems.map(({ id, skillName, percent, bgColor }) => (
@@ -27,7 +27,7 @@ const SkillsAndTestimonials = () => {
                         </div>
                     </div>
 
-                    <div className="col-md-6">
+                    <div className="col-lg-6">
                         <div className="testimonials">
                             <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
                                 <div className="carousel-inner">
