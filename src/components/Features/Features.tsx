@@ -10,8 +10,9 @@ const Features = () => {
             <div className="container mt-5">
                 <div className="row">
                     {
-                        featureData.map(({ id, iconClassName, titleCard, description }) => (
-                            <FeatureCard key={id} iconClassName={iconClassName} titleCard={titleCard} description={description} />
+                        featureData.map(({ id, iconClassName, titleCard, description, isBigBackground }) => (
+                            <FeatureCard key={id} iconClassName={iconClassName}
+                                titleCard={titleCard} description={description} isBigBackground={isBigBackground} />
                         ))
                     }
                 </div>

@@ -4,6 +4,7 @@ interface IFeatureCard extends ISetID {
     iconClassName: string;
     titleCard: string;
     description: string;
+    isBigBackground?: boolean;
 }
 
 export default IFeatureCard;

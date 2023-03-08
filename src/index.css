@@ -35,6 +35,10 @@ section {
   transition: all var(--main-duration-time) ease-in-out;
 }
 
+.p-half {
+  padding: 2.3rem;
+}
+
 .text-black {
   color: var(--black-color);
 }
