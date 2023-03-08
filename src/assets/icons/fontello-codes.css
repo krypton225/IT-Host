@@ -1,0 +1,83 @@
+.icon-window:before {
+    content: '\e800';
+}
+
+.icon-desktop:before {
+    content: '\e801';
+}
+
+.icon-contacts:before {
+    content: '\e802';
+}
+
+.icon-pinterest:before {
+    content: '\e803';
+}
+
+.icon-heart-empty:before {
+    content: '\e804';
+}
+
+.icon-thumbs-up:before {
+    content: '\e805';
+}
+
+.icon-adult:before {
+    content: '\e806';
+}
+
+.icon-plus:before {
+    content: '\e807';
+}
+
+.icon-minus:before {
+    content: '\e808';
+}
+
+.icon-location-outline:before {
+    content: '\e809';
+}
+
+.icon-phone:before {
+    content: '\e80a';
+}
+
+.icon-mail:before {
+    content: '\e80b';
+}
+
+.icon-facebook:before {
+    content: '\f09a';
+}
+
+.icon-doc-text:before {
+    content: '\f0f6';
+}
+
+.icon-folder-open-empty:before {
+    content: '\f115';
+}
+
+.icon-behance:before {
+    content: '\f1b4';
+}
+
+.icon-database:before {
+    content: '\f1c0';
+}
+
+.icon-server:before {
+    content: '\f233';
+}
+
+.icon-mixcloud:before {
+    content: '\f289';
+}
+
+.icon-twitter:before {
+    content: '\f309';
+}
+
+.icon-dribbble:before {
+    content: '\f31b';
+}
