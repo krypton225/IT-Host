@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "./montserrat-font.css";
+@import "./assets/icons/index.css";
 
 :root {
   --white-color: #fff;
