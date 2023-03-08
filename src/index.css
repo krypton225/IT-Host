@@ -137,6 +137,26 @@ section {
   top: -2.4rem;
 }
 
+.testimonials__say {
+  width: 100%;
+  padding: 1.3rem;
+  border-radius: 1.2rem;
+  position: relative;
+  background-color: var(--bg-white-secondary);
+}
+
+.testimonials__say::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: -10px;
+  right: 35px;
+  background-color: var(--bg-white-secondary);
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
 .animated {
   animation-name: landing-img-animations;
   animation-duration: 3s;
