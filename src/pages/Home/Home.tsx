@@ -5,6 +5,7 @@ import { Landing } from "./Landing";
 import EnterWebsite from "./EnterWebsite/EnterWebsite";
 import SkillsAndTestimonials from "./SkillsAndTestimonials/SkillsAndTestimonials";
 import Price from "./Price/Price";
+import HostSolution from "./HostSolution/HostSolution";
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <EnterWebsite />
             <SkillsAndTestimonials />
             <Price />
+            <HostSolution />
         </>
     );
 };
