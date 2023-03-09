@@ -3,11 +3,11 @@ import INavbarLinks from "./INavbarLinks.interface";
 
 const navbarDataItemsLinks: Array<INavbarLinks> = [
     { text: "home", url: "/", hasButtonShape: false },
-    { text: "about us", url: "/", hasButtonShape: false },
-    { text: "services", url: "/", hasButtonShape: false },
-    { text: "news", url: "/", hasButtonShape: false },
-    { text: "contact", url: "/", hasButtonShape: false },
-    { text: "login / register", url: "/", hasButtonShape: true },
+    { text: "about us", url: "/about", hasButtonShape: false },
+    { text: "services", url: "/services", hasButtonShape: false },
+    { text: "news", url: "/news", hasButtonShape: false },
+    { text: "contact", url: "/contact", hasButtonShape: false },
+    { text: "login / register", url: "", hasButtonShape: true },
 ];
 
 (() => GenerateId(navbarDataItemsLinks))();

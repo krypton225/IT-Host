@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 
+import { NavLink } from "react-router-dom";
+
 import navbarDataItemsLinks from "./navbar-data";
 
 import { Logo } from "../../data/photos";
@@ -38,13 +40,13 @@ const MainNavbar = () => {
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto">
                         {
-                            navbarDataItemsLinks.map(({ id, text, url, hasButtonShape }) => (
+                            navbarDataItemsLinks.map(({ id, text, url = "", hasButtonShape }) => (
                                 <li key={id} className="nav-item">
-                                    <a href={url}
+                                    <NavLink to={`${url}`}
                                         className={`nav-item-link block py-3 ${hasButtonShape ? "custom-link" : ""} mx-3 text-capitalize 
                                         text-decoration-none ${isScrolled ? "text-black" : "text-white"}`}>
                                         {text}
-                                    </a>
+                                    </NavLink>
                                 </li>
                             ))
                         }
