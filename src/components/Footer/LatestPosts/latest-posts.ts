@@ -10,5 +10,4 @@ const latestPosts: Array<ILatestPosts> = [
 ];
 
 (() => GenerateId(latestPosts))();
-{ }
-export default latestPosts; { }
+export default latestPosts;
