@@ -1,4 +1,4 @@
-import { MainNavbar } from "./components";
+import { Footer, MainNavbar } from "./components";
 
 import { Home } from "pages";
 
@@ -10,6 +10,8 @@ function App() {
       <MainNavbar />
 
       <Home />
+
+      <Footer />
     </>
   );
 }

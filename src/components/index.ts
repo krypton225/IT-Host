@@ -5,3 +5,5 @@ export { default as MainTitle } from "./MainTitle/MainTitle";
 export { default as Features } from "./Features/Features";
 
 export { default as MainButton } from "./MainButton/MainButton";
+
+export { default as Footer } from "./Footer/Footer";
