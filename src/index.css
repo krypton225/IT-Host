@@ -226,6 +226,24 @@ ul {
   font-size: 0.84rem;
 }
 
+.team-link {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+  border-radius: 50%;
+  background-color: var(--bg-tolopea-color);
+  color: var(--white-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.team-link:hover {
+  background-color: var(--pink-color);
+  color: var(--white-color);
+}
+
 .animated {
   animation-name: landing-img-animations;
   animation-duration: 3s;
