@@ -4,6 +4,7 @@ interface IMainButton {
     bg: string;
     rounded: boolean;
     padding?: string;
+    halfWidth?: boolean;
 }
 
 export default IMainButton;
