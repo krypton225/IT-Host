@@ -4,6 +4,7 @@ import socialData from "./SocialFooter/social-data";
 
 import latestPosts from "./LatestPosts/latest-posts";
 import { firstUsefulLinks, secondUsefulLinks } from "./UsefulLinks/useful-links";
+import RenderLinks from "./RenderLinks/RenderLinks";
 
 const Footer = () => {
     return (
@@ -34,25 +35,13 @@ const Footer = () => {
                         <div className="row mt-4 gx-4 gy-xs-4 gy-lg-0 text-capitalize">
                             <div className="col-sm-6">
                                 <ul>
-                                    {
-                                        firstUsefulLinks.map(({ id, text, url, title }) => (
-                                            <li key={id} className="useful-item">
-                                                <a className="useful-link" href={url} title={title}>{text}</a>
-                                            </li>
-                                        ))
-                                    }
+                                    { <RenderLinks linksArray={firstUsefulLinks} /> }
                                 </ul>
                             </div>
 
                             <div className="col-sm-6">
                                 <ul>
-                                    {
-                                        secondUsefulLinks.map(({ id, text, url, title }) => (
-                                            <li key={id} className="useful-item">
-                                                <a className="useful-link" href={url} title={title}>{text}</a>
-                                            </li>
-                                        ))
-                                    }
+                                    { <RenderLinks linksArray={secondUsefulLinks} /> }
                                 </ul>
                             </div>
                         </div>
