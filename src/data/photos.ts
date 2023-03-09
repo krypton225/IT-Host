@@ -41,3 +41,5 @@ export { default as Rocket } from "../assets/images/general/rocket.webp";
 export { default as SectionTitleIcon } from "../assets/images/general/section-title-icon.webp";
 
 export { default as GeneralService } from "../assets/images/general/service.webp";
+
+export { default as AboutPic } from "../assets/images/general/about.webp";
