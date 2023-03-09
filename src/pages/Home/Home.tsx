@@ -2,7 +2,7 @@ import { Features } from "components/";
 
 import { Landing } from "./Landing";
 
-import EnterWebsite from "./EnterWebsite/EnterWebsite";
+import EnterWebsite from "../../components/EnterWebsite/EnterWebsite";
 import SkillsAndTestimonials from "./SkillsAndTestimonials/SkillsAndTestimonials";
 import Price from "./Price/Price";
 import HostSolution from "./HostSolution/HostSolution";
@@ -12,7 +12,7 @@ const Home = () => {
         <>
             <Landing />
             <Features />
-            <EnterWebsite />
+            <EnterWebsite hasBackgroundImage={true} />
             <SkillsAndTestimonials />
             <Price />
             <HostSolution />

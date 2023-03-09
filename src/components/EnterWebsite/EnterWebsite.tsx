@@ -1,12 +1,15 @@
+import IEnterWebsite from "./IEnterWebsite.interface";
+
 import { MainButton, MainTitle } from "components";
+
 import { MainBackground } from "data/photos";
 
-const EnterWebsite = () => {
+const EnterWebsite = ({ hasBackgroundImage }: IEnterWebsite) => {
     return (
         <div
             style={{
                 paddingBlock: "4.5rem",
-                backgroundImage: `url('${MainBackground}')`,
+                backgroundImage: `${hasBackgroundImage ? `url('${MainBackground}')` : "none"}`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
             }}>
