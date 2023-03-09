@@ -4,7 +4,7 @@ import { MainButton, MainTitle } from "components";
 
 import { MainBackground } from "data/photos";
 
-const EnterWebsite = ({ hasBackgroundImage }: IEnterWebsite) => {
+const EnterWebsite = ({ hasBackgroundImage, hasDescription }: IEnterWebsite) => {
     return (
         <div
             style={{
@@ -30,9 +30,13 @@ const EnterWebsite = ({ hasBackgroundImage }: IEnterWebsite) => {
                     </div>
                 </div>
 
-                <p className="mt-3 text-white" style={{ fontSize: "0.8rem" }}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo corporis beatae nemo!
-                </p>
+                {
+                    hasDescription ?
+                        (<p className="mt-3 text-white" style={{ fontSize: "0.8rem" }}>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quo corporis beatae nemo!
+                        </p>)
+                        : ""
+                }
             </div>
         </div>
     );
