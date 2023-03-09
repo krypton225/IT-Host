@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import EnterWebsite from "components/EnterWebsite/EnterWebsite";
 
 import { MainButton, MainTitle, SectionHeader } from "components";
@@ -8,6 +10,10 @@ import countingData from "./CountingData/counting-data";
 import teamData from "./Team/team-data";
 
 const About = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="about-us">
             <SectionHeader sectionName="about us" baseURL="home" />
