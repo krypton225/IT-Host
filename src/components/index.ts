@@ -6,4 +6,6 @@ export { default as Features } from "./Features/Features";
 
 export { default as MainButton } from "./MainButton/MainButton";
 
+export { default as SectionHeader } from "./SectionHeader/SectionHeader";
+
 export { default as Footer } from "./Footer/Footer";
