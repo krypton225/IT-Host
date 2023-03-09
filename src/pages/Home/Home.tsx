@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Features } from "components/";
 
 import { Landing } from "./Landing";
@@ -8,6 +10,10 @@ import Price from "./Price/Price";
 import HostSolution from "./HostSolution/HostSolution";
 
 const Home = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <Landing />
