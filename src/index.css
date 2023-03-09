@@ -142,6 +142,10 @@ ul {
   background-color: var(--pink-color);
 }
 
+.website-name {
+  background-color: rgb(238, 246, 249);
+}
+
 .website-name:focus {
   outline: none !important;
 }

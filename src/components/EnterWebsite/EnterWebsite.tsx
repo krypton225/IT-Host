@@ -14,7 +14,8 @@ const EnterWebsite = ({ hasBackgroundImage }: IEnterWebsite) => {
                 backgroundSize: "cover",
             }}>
 
-            <MainTitle title="enter your website" titleColor="var(--white-color)"
+            <MainTitle title="enter your website"
+                titleColor={`${hasBackgroundImage ? "var(--white-color)" : "var(--text-darker-1)"}`}
                 description="choose us to keep your business" descriptionColor="#8e8e8e" />
 
             <div className="container mt-5">
