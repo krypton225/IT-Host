@@ -51,6 +51,10 @@ section {
   padding-block: 10rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -173,6 +177,24 @@ ul {
   background-color: var(--bg-white-secondary);
 }
 
+.social-link {
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 1.2rem;
+  margin-inline-end: 0.7rem;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-amaranth-mov-color);
+  color: white;
+}
+
+.social-link:hover {
+  background-color: var(--bg-amaranth-mov-color);
+  color: white;
+}
+
 .testimonials__say::after {
   content: "";
   width: 20px;
@@ -188,6 +210,16 @@ ul {
 .price-card__body ul li {
   margin-block: 1.7rem;
   text-transform: capitalize;
+}
+
+.useful-item {
+  margin-bottom: 0.6rem;
+}
+
+.useful-link,
+.useful-link:hover {
+  color: var(--text-gray-light);
+  font-size: 0.84rem;
 }
 
 .animated {
