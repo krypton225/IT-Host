@@ -12,7 +12,7 @@ const Home = () => {
         <>
             <Landing />
             <Features />
-            <EnterWebsite hasBackgroundImage={true} />
+            <EnterWebsite hasBackgroundImage={true} hasDescription={true} />
             <SkillsAndTestimonials />
             <Price />
             <HostSolution />
