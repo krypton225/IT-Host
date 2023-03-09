@@ -1,8 +1,10 @@
+import { SectionHeader } from "components";
+
 const About = () => {
     return (
-        <section>
-            About
-        </section>
+        <div>
+            <SectionHeader sectionName="about us" baseURL="home" />
+        </div>
     );
 };
 
