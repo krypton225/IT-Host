@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { SectionHeader } from "components";
+import { Features, SectionHeader } from "components";
 
 const Services = () => {
     useEffect(() => {
@@ -9,7 +9,9 @@ const Services = () => {
 
     return (
         <div className="services">
-            <SectionHeader sectionName="services" baseURL="home" />            
+            <SectionHeader sectionName="services" baseURL="home" />
+
+            <Features />
         </div>
     );
 };
