@@ -4,6 +4,8 @@ import { Features, SectionHeader } from "components";
 
 import Columns from "./ColumnsSection/Columns";
 
+import FaqServices from "./FaqServices/FaqServices";
+
 const Services = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -16,6 +18,8 @@ const Services = () => {
             <Features />
 
             <Columns />
+
+            <FaqServices />
         </div >
     );
 };

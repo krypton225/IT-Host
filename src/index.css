@@ -292,6 +292,29 @@ ul {
   }
 }
 
+.accordion-button {
+  padding-block: 1.4rem;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button::after {
+  content: none;
+}
+
+.accordion-button::before {
+  content: '+';
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2.5%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+}
+
 .animated {
   animation-name: landing-img-animations;
   animation-duration: 3s;
