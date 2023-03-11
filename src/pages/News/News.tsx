@@ -49,9 +49,9 @@ const News = () => {
                             }
                         </div>
 
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 d-flex flex-column">
                             <div className="w-100 rounded-4">
-                                <img src={AddPhoto} alt="" className="w-100 rounded-4 cover" />
+                                <img src={AddPhoto} alt="" className="news-pic rounded-4 cover" />
                             </div>
 
                             <div className="w-100 mt-5">

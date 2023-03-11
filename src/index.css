@@ -320,6 +320,24 @@ ul {
   font-size: 2rem;
 }
 
+@media (max-width: 767px) {
+  .news-pic {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  .news-pic {
+    width: 30%;
+  }
+}
+
+@media (min-width: 991px) {
+  .news-pic {
+    width: 100%;
+  }
+}
+
 .animated {
   animation-name: landing-img-animations;
   animation-duration: 3s;
