@@ -7,6 +7,7 @@ import { AddPhoto } from "data/photos";
 import blogData from "./Blog/blog-data";
 import ThirdColumn from "components/Footer/ThirdColumn/ThirdColumn";
 import textLatestPostsData from "./text-posts-data";
+import tagsData from "./tags-data";
 
 const News = () => {
     useEffect(() => {
@@ -75,6 +76,25 @@ const News = () => {
                                             <li key={id}>
                                                 <a href={url} className="d-block my-3 text-capitalize"
                                                     style={{ color: `var(--text-gray-dark)` }}>
+                                                    {text}
+                                                </a>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
+                            </div>
+
+                            <div className="w-100">
+                                <p className="text-capitalize fw-semibold mt-5 mb-3" style={{ fontSize: "1.3rem", color: `#00` }}>
+                                    tags
+                                </p>
+
+                                <ul>
+                                    {
+                                        tagsData.map(({ id, text, url, active }) => (
+                                            <li key={id} className="d-inline-block" style={{ marginRight: "1.3rem" }}>
+                                                <a href={url} className={`${active ? "fw-semibold" : ""}`}
+                                                    style={{ display: "inline-block", color: `${active ? "var(--pink-color)" : "var(--text-gray-dark)"}` }}>
                                                     {text}
                                                 </a>
                                             </li>
