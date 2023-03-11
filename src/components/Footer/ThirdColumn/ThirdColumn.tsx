@@ -1,9 +1,10 @@
 import latestPosts from "../LatestPosts/latest-posts";
+import IThirdColumn from "./IThirdColumn.interface";
 
-const ThirdColumn = () => {
+const ThirdColumn = ({ titleColor = "white" }: IThirdColumn) => {
     return (
         <>
-            <p className="mt-3 text-capitalize text-white" style={{ fontSize: "1.3rem" }}>latest posts</p>
+            <p className="mt-3 text-capitalize" style={{ fontSize: "1.3rem", color: `${titleColor}` }}>latest posts</p>
 
             {
                 latestPosts.map(({ id, title, postImg, postDate }) => (
