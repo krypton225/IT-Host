@@ -6,6 +6,7 @@ import { AddPhoto } from "data/photos";
 
 import blogData from "./Blog/blog-data";
 import ThirdColumn from "components/Footer/ThirdColumn/ThirdColumn";
+import textLatestPostsData from "./text-posts-data";
 
 const News = () => {
     useEffect(() => {
@@ -61,6 +62,25 @@ const News = () => {
 
                             <div className="w-100 mt-5 fw-semibold">
                                 <ThirdColumn titleColor="#000" marginTop="1.2rem" />
+                            </div>
+
+                            <div className="w-100">
+                                <p className="text-capitalize fw-semibold mt-5 mb-3" style={{ fontSize: "1.3rem", color: `#00` }}>
+                                    latest posts
+                                </p>
+
+                                <ul>
+                                    {
+                                        textLatestPostsData.map(({ id, text, url }) => (
+                                            <li key={id}>
+                                                <a href={url} className="d-block my-3 text-capitalize"
+                                                    style={{ color: `var(--text-gray-dark)` }}>
+                                                    {text}
+                                                </a>
+                                            </li>
+                                        ))
+                                    }
+                                </ul>
                             </div>
                         </div>
                     </div>
