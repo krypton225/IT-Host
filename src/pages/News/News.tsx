@@ -5,6 +5,7 @@ import { SectionHeader } from "components";
 import { AddPhoto } from "data/photos";
 
 import blogData from "./Blog/blog-data";
+import ThirdColumn from "components/Footer/ThirdColumn/ThirdColumn";
 
 const News = () => {
     useEffect(() => {
@@ -56,6 +57,10 @@ const News = () => {
 
                             <div className="w-100 mt-5 mx-auto">
                                 <input type="text" name="" id="" className="custom-input rounded-2" placeholder="Search.." />
+                            </div>
+
+                            <div className="w-100 mt-5 fw-semibold">
+                                <ThirdColumn titleColor="#000" />
                             </div>
                         </div>
                     </div>
