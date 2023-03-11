@@ -60,7 +60,7 @@ const News = () => {
                             </div>
 
                             <div className="w-100 mt-5 fw-semibold">
-                                <ThirdColumn titleColor="#000" />
+                                <ThirdColumn titleColor="#000" marginTop="1.2rem" />
                             </div>
                         </div>
                     </div>
