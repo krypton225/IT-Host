@@ -54,8 +54,8 @@ const News = () => {
                                 <img src={AddPhoto} alt="" className="news-pic rounded-4 cover" />
                             </div>
 
-                            <div className="w-100 mt-5">
-                                <input type="text" name="" id="" className="w-100" />
+                            <div className="w-100 mt-5 mx-auto">
+                                <input type="text" name="" id="" className="custom-input rounded-2" placeholder="Search.." />
                             </div>
                         </div>
                     </div>

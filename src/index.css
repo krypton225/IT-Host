@@ -30,6 +30,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
 
 body {
@@ -334,6 +335,33 @@ ul {
 
 @media (min-width: 991px) {
   .news-pic {
+    width: 100%;
+  }
+}
+
+.custom-input {
+  padding-block: 0.4rem;
+  padding-inline: 0.8rem;
+  outline: 0;
+  border: 0;
+  background-color: #eee;
+}
+
+@media (max-width: 767px) {
+  .custom-input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-input {
+    width: 60%;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 991px) {
+  .custom-input {
     width: 100%;
   }
 }
