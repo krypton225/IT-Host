@@ -1,8 +1,8 @@
 import { Footer, MainNavbar } from "./components";
 
-import { Home, About, Services, News, Contact, Login, Register, Error } from "pages";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import AllRoutesData from "./data/routes";
 
 function App() {
   return (
@@ -11,14 +11,11 @@ function App() {
         <MainNavbar />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="*" element={<Error />} />
+          {
+            AllRoutesData.map(({ id, pathName, ComponentElement }) => (
+              <Route key={id} path={pathName} element={< ComponentElement />} />
+            ))
+          }
         </Routes>
 
         <Footer />
