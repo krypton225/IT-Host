@@ -1,7 +1,9 @@
+import { SectionHeader } from "components";
+
 const Contact = () => {
     return (
-        <div>
-            Contact
+        <div className="contact">
+            <SectionHeader sectionName="contact" baseURL="home" />
         </div>
     );
 };
