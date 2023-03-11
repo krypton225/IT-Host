@@ -13,7 +13,9 @@ const Footer = () => {
 
                     <SecondColumn />
 
-                    <ThirdColumn />
+                    <div className="col-md-6 col-lg-4">
+                        <ThirdColumn />
+                    </div>
                 </div>
             </div>
 

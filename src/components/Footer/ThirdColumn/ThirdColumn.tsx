@@ -2,7 +2,7 @@ import latestPosts from "../LatestPosts/latest-posts";
 
 const ThirdColumn = () => {
     return (
-        <div className="col-md-6 col-lg-4">
+        <>
             <p className="mt-3 text-capitalize text-white" style={{ fontSize: "1.3rem" }}>latest posts</p>
 
             {
@@ -24,7 +24,7 @@ const ThirdColumn = () => {
                     </div>
                 ))
             }
-        </div>
+        </>
     );
 };
 
