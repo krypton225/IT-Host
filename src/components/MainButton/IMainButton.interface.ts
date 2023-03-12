@@ -5,6 +5,7 @@ interface IMainButton {
     rounded: boolean;
     padding?: string;
     halfWidth?: boolean;
+    setCustomWidth?: string;
 }
 
 export default IMainButton;
