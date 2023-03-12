@@ -1,8 +1,16 @@
+import { useEffect } from "react";
+
 import { MainButton, SectionHeader } from "components";
-import contactInfoData from "./ContactInfo/contact-info-data";
+
 import InputContact from "./InputContact/InputContact";
 
+import contactInfoData from "./ContactInfo/contact-info-data";
+
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div className="contact">
             <SectionHeader sectionName="contact" baseURL="home" />
