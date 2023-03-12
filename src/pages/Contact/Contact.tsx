@@ -49,7 +49,9 @@ const Contact = () => {
                                 <InputContact type="txt-area" placeHolderText="message" />
                             </div>
 
-                            <MainButton text="send" setCustomWidth="13rem" rounded padding="0.7rem" bg="var(--pink-color)" color="white" />
+                            <div className="col-12">
+                                <MainButton text="send" setCustomWidth="13rem" rounded padding="0.7rem" bg="var(--pink-color)" color="white" />
+                            </div>
                         </form>
                     </div>
                 </div>
