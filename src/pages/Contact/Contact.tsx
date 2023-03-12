@@ -1,5 +1,6 @@
-import { SectionHeader } from "components";
+import { MainButton, SectionHeader } from "components";
 import contactInfoData from "./ContactInfo/contact-info-data";
+import InputContact from "./InputContact/InputContact";
 
 const Contact = () => {
     return (
@@ -7,7 +8,7 @@ const Contact = () => {
             <SectionHeader sectionName="contact" baseURL="home" />
 
             <div className="container" style={{ paddingBlock: "5.5rem" }}>
-                <div className="row">
+                <div className="row g-5">
                     <div className="col-lg-4">
                         <p className="fs-3 fw-semibold text-capitalize">contact info</p>
 
@@ -31,7 +32,25 @@ const Contact = () => {
                     </div>
 
                     <div className="col-lg-8">
+                        <form className="row g-4">
+                            <div className="col-md-6">
+                                <InputContact type="normal" placeHolderText="your name" />
+                            </div>
 
+                            <div className="col-md-6">
+                                <InputContact type="normal" placeHolderText="your email" />
+                            </div>
+
+                            <div className="col-12">
+                                <InputContact type="normal" placeHolderText="subject" />
+                            </div>
+
+                            <div className="col-12">
+                                <InputContact type="txt-area" placeHolderText="message" />
+                            </div>
+
+                            <MainButton text="send" setCustomWidth="13rem" rounded padding="0.7rem" bg="var(--pink-color)" color="white" />
+                        </form>
                     </div>
                 </div>
             </div>
