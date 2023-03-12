@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import { MainButton, SectionHeader } from "components";
 
-import InputContact from "./InputContact/InputContact";
+import CustomInput from "components/CustomInput/CustomInput";
 
 import contactInfoData from "./ContactInfo/contact-info-data";
 
@@ -42,19 +42,19 @@ const Contact = () => {
                     <div className="col-lg-8">
                         <form className="row g-4">
                             <div className="col-md-6">
-                                <InputContact type="normal" placeHolderText="your name" />
+                                <CustomInput isNormalInput typeField="text" placeHolderText="your name" />
                             </div>
 
                             <div className="col-md-6">
-                                <InputContact type="normal" placeHolderText="your email" />
+                                <CustomInput isNormalInput typeField="text" placeHolderText="your email" />
                             </div>
 
                             <div className="col-12">
-                                <InputContact type="normal" placeHolderText="subject" />
+                                <CustomInput isNormalInput typeField="text" placeHolderText="subject" />
                             </div>
 
                             <div className="col-12">
-                                <InputContact type="txt-area" placeHolderText="message" />
+                                <CustomInput isNormalInput={false} typeField="txt-area" placeHolderText="message" />
                             </div>
 
                             <div className="col-12">
